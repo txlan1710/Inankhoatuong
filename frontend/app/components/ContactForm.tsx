@@ -10,12 +10,18 @@ export default function ContactForm() {
     service: "In Tem Nhãn",
   });
 
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const handleChange = (
+  e: React.ChangeEvent<
+    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+  >
+) => {
+  const { name, value } = e.target;
+
+  setForm({
+    ...form,
+    [name]: value,
+  });
+};
 
   const handleSubmit = async () => {
     console.log(form); 
