@@ -37,50 +37,36 @@
 
             {visibleItems.map((cat, index) => (
                <Link key={index} href={cat.link}>
-                <div className="group relative bg-white p-3 md:p-4 rounded-lg shadow-md text-center hover:shadow-lg transition overflow-hidden cursor-pointer">
+                <div className="group relative bg-white p-2 sm:p-3 md:p-4 rounded-lg shadow-md 
+  text-center hover:shadow-xl transition overflow-hidden cursor-pointer
+  flex flex-col h-full">
 
-                  {/* ẢNH */}
-                  <div className="relative">
-                    {/* ảnh mặc định */}
-                    <img
-                      src={cat.img}
-                      alt={cat.name}
-                      className="w-full aspect-square object-cover rounded transition-opacity duration-500 group-hover:opacity-0"
-                    />
+  {/* IMAGE */}
+  <div className="relative">
+    <img
+      src={cat.img}
+      alt={cat.name}
+      className="w-full aspect-square object-cover rounded"
+    />
+  </div>
 
-                    {/* ảnh hover (bạn có thể đổi ảnh khác nếu muốn) */}
-                    <img
-                      src={cat.hoverImg}
-                      alt={cat.name}
-                      className="w-full aspect-square object-cover rounded absolute top-0 left-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 scale-105"
-                    />
+  {/* TEXT */}
+  <div className="flex flex-col flex-1 justify-between">
+    
+    {/* tên */}
+    <p className="mt-2 md:mt-3 px-1 font-bold text-[#184e86] 
+      text-xs sm:text-sm md:text-base line-clamp-2 min-h-[40px]">
+      {cat.name}
+    </p>
 
-                    {/* NÚT XEM NHANH */}
-                    <div
-                      className="
-                        absolute bottom-0 left-0 w-full
-                        bg-[#184e86]/90 text-white text-center py-1 md:py-3 font-semibold
-                        
-                        opacity-0 translate-y-full
-                        group-hover:opacity-100 group-hover:translate-y-0
-                        
-                        transition-all duration-500
-                      "
-                    >
-                      XEM NHANH
-                    </div>
-                  </div>
+    {/* mô tả */}
+    <p className="text-[11px] sm:text-xs md:text-sm text-gray-600 
+      line-clamp-2 min-h-[32px]">
+      {cat.desc}
+    </p>
 
-                  {/* TEXT */}
-                  <p className="text-xl font-bold text-dark mt-3 px-2 md:px-4 text-[#184e86] text-sm md:text-base">
-                    {cat.name}
-                  </p>
-
-                  <p className="text-xs md:text-sm text-gray-600">
-                    {cat.desc}
-                  </p>
-
-                </div>
+  </div>
+</div>
               </Link>
             ))}
 

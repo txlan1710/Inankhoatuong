@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 
+
 export default function ContactForm() {
+  const [showSuccess, setShowSuccess] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -24,30 +26,18 @@ export default function ContactForm() {
 };
 
   const handleSubmit = async () => {
-    console.log(form); 
-    try {
-      const res = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-      });
+  console.log(form);
 
-      const data = await res.json();
-      alert(data.message);
+  // 👉 giả lập thành công
+  setShowSuccess(true);
 
-      setForm({
-        name: "",
-        phone: "",
-        email: "",
-        service: "In Tem Nhãn",
-      });
-
-    } catch (error) {
-      alert("Lỗi kết nối server");
-    }
-  };
+  setForm({
+    name: "",
+    phone: "",
+    email: "",
+    service: "In Tem Nhãn",
+  });
+};
 
   return (
     <section className="w-full bg-gradient-to-r from-[#184e86] via-[#1f6fd1] to-[#38bdf8] text-white">
@@ -135,6 +125,35 @@ export default function ContactForm() {
         />
 
       </div>
+
+    {/* ✅ POPUP ĐẶT Ở ĐÂY */}
+    {showSuccess && (
+      <div 
+        className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+        onClick={() => setShowSuccess(false)}
+      >
+        <div
+          onClick={(e) => e.stopPropagation()}
+          className="bg-white rounded-xl p-6 text-center max-w-sm w-full mx-4"
+        >
+          <h3 className="text-xl font-bold text-[#184e86] mb-3">
+            🎉 Thành công!
+          </h3>
+
+          <p className="text-gray-700 mb-4">
+            Cảm ơn bạn đã để lại thông tin.<br />
+            Chúng tôi sẽ liên hệ sớm với bạn!
+          </p>
+
+          <button
+            onClick={() => setShowSuccess(false)}
+            className="bg-[#184e86] text-white px-5 py-2 rounded"
+          >
+            Đóng
+          </button>
+        </div>
+      </div>
+    )}
 
     </section>
   );
