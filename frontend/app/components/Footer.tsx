@@ -8,15 +8,15 @@ export default function Footer() {
         
         {/* CỘT 1 */}
         <div>
-          <h3 className="font-semibold text-xs md:text-lg mb-1">THÔNG TIN</h3>
+          <h3 className="font-semibold text-xs md:text-lg mb-1">THÔNG TIN CHUNG</h3>
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <h3 className="text-[10px] md:text-lg font-bold mb-2 md:mb-4 leading-tight">
             CTY TNHH SX & TM KHOA TƯỜNG CÀ MAU
           </h3>
 
-          <ul className="space-y-1 text-[10px] md:text-base leading-tight">
-            <li>☎ 0948 133 600</li>
+          <ul className="space-y-2 text-[10px] md:text-base leading-tight">
+            <li>☎ 0948 133 600 - 0911 828 978</li>
             <li className="truncate">📬 lenghiabaobi@gmail.com</li>
             <li className="leading-tight">
               📌 26B Huỳnh Thúc Kháng, Cà Mau
@@ -24,8 +24,9 @@ export default function Footer() {
           </ul>
 
           <ul className="pt-2 md:pt-5 text-[10px] md:text-base">
-            <li><strong>Giờ:</strong></li>
+            <li><strong>Giờ làm việc:</strong></li>
             <li>07:00 - 17:00</li>
+            <li>Từ T2 đến CN</li>
           </ul>
         </div>
 
@@ -50,11 +51,11 @@ export default function Footer() {
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <div className="flex items-center gap-2">
-            <a href="mailto:lenghiabaobi@gmail.com">
-              <SiGmail size={16} />
+            <a className="hover:text-[#3dbeb3]" href="mailto:lenghiabaobi@gmail.com" >
+              <SiGmail  size={22}  />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61584416163439">
-              <FaFacebook size={16} />
+            <a className="hover:text-[#3dbeb3]" href="https://www.facebook.com/profile.php?id=61584416163439">
+              <FaFacebook size={22} />
             </a>
           </div>
 

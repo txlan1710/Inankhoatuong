@@ -43,12 +43,20 @@
 
   {/* IMAGE */}
   <div className="relative">
-    <img
-      src={cat.img}
-      alt={cat.name}
-      className="w-full aspect-square object-cover rounded"
-    />
-  </div>
+  {/* ảnh mặc định */}
+  <img
+    src={cat.img}
+    alt={cat.name}
+    className="w-full aspect-square object-cover rounded transition duration-300 group-hover:opacity-0"
+  />
+
+  {/* ảnh hover */}
+  <img
+    src={cat.hoverImg}
+    alt={cat.name}
+    className="w-full aspect-square object-cover rounded absolute top-0 left-0 opacity-0 transition duration-300 group-hover:opacity-100"
+  />
+</div>
 
   {/* TEXT */}
   <div className="flex flex-col flex-1 justify-between">
