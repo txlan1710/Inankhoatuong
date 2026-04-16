@@ -23,11 +23,6 @@ export default function HeroBanner() {
     setIndex((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
   };
 
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 4000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="w-full ">
       {/* <div className="relative w-full overflow-hidden max-w-7xl mx-auto py-4 md:py-12"> */}

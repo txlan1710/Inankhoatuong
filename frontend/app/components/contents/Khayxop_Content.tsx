@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function KhayXop() {
   return (
     <main className="w-full bg-white text-gray-800">
@@ -28,19 +29,19 @@ export default function KhayXop() {
           </h2>
 
           <p className="text-gray-700 text-sm sm:text-base indent-4 sm:indent-8 mb-3">
-            Khay xốp là loại khay được sản xuất từ nhựa <strong>Polystyrene (PS)</strong> hoặc <strong>EPS</strong>, có đặc tính nhẹ, bền và khả năng cách nhiệt tốt. Đây là loại vật liệu được sử dụng phổ biến trong đóng gói thực phẩm nhờ tính tiện lợi và chi phí thấp.
+            <strong>Khay xốp</strong> là loại khay được sản xuất từ nhựa <strong>Polystyrene (PS)</strong> hoặc <strong>EPS</strong>, có đặc tính nhẹ, bền và khả năng cách nhiệt tốt. Đây là loại vật liệu được sử dụng phổ biến trong đóng gói thực phẩm nhờ tính tiện lợi và chi phí thấp.
           </p>
 
-          <p className="text-gray-700 text-sm sm:text-base mb-3">
-            Khay xốp thường được sử dụng để đựng:
+          <p className="text-gray-700 text-sm sm:text-base mb-3 indent-4 sm:indent-8">
+            <strong>Khay xốp thường được sử dụng để đựng:</strong>
           </p>
 
           <ul className="list-disc pl-5 sm:pl-6 text-gray-700 text-sm sm:text-base space-y-1">
-            <li>Thịt tươi sống</li>
-            <li>Cá và hải sản</li>
-            <li>Rau củ quả</li>
-            <li>Trái cây</li>
-            <li>Thực phẩm chế biến sẵn</li>
+            <li className="ml-6">Thịt tươi sống</li>
+            <li className="ml-6">Cá và hải sản</li>
+            <li className="ml-6">Rau củ quả</li>
+            <li className="ml-6">Trái cây</li>
+            <li className="ml-6">Thực phẩm chế biến sẵn</li>
           </ul>
 
           <p className="text-gray-700 text-sm sm:text-base indent-4 sm:indent-8 mt-3">
@@ -107,10 +108,10 @@ export default function KhayXop() {
           </h2>
 
           <ul className="list-disc pl-5 sm:pl-6 text-gray-700 text-sm sm:text-base space-y-2">
-            <li><strong>Khay Xốp Trắng:</strong> Phổ biến trong siêu thị</li>
-            <li><strong>Khay Xốp Đen:</strong> Tăng tính thẩm mỹ</li>
-            <li><strong>Khay Xốp Có Gân:</strong> Chống trơn</li>
-            <li><strong>Khay Xốp Không Gân:</strong> Bề mặt trơn</li>
+            <li className="ml-4"><strong>Khay Xốp Trắng:</strong> Phổ biến trong siêu thị</li>
+            <li className="ml-4"><strong>Khay Xốp Đen:</strong> Tăng tính thẩm mỹ</li>
+            <li className="ml-4"><strong>Khay Xốp Có Gân:</strong> Chống trơn</li>
+            <li className="ml-4"><strong>Khay Xốp Không Gân:</strong> Bề mặt trơn</li>
           </ul>
 
         </section>
@@ -123,10 +124,10 @@ export default function KhayXop() {
           </h2>
 
           <ul className="list-disc pl-5 sm:pl-6 text-gray-700 text-sm sm:text-base space-y-2">
-            <li>Đóng gói thịt và hải sản</li>
-            <li>Trưng bày rau củ quả</li>
-            <li>Đóng gói thực phẩm đông lạnh</li>
-            <li>Đựng đồ mang đi</li>
+            <li className="ml-4">Đóng gói thịt và hải sản</li>
+            <li className="ml-4">Trưng bày rau củ quả</li>
+            <li className="ml-4">Đóng gói thực phẩm đông lạnh</li>
+            <li className="ml-4">Đựng đồ mang đi</li>
           </ul>
 
         </section>
@@ -141,10 +142,10 @@ export default function KhayXop() {
           </h2>
 
           <ul className="list-disc pl-5 sm:pl-6 text-gray-700 text-sm sm:text-base space-y-2">
-            <li>Khay M12: 18.5 x 12 x 1.5 cm</li>
-            <li>Khay M14: 20.5 x 14 x 1.8 cm</li>
-            <li>Khay M16: 22.5 x 16 x 2 cm</li>
-            <li>Khay M18: 24.5 x 17.5 x 2.2 cm</li>
+            <li className="ml-4">Khay M12: 18.5 x 12 x 1.5 cm</li>
+            <li className="ml-4">Khay M14: 20.5 x 14 x 1.8 cm</li>
+            <li className="ml-4">Khay M16: 22.5 x 16 x 2 cm</li>
+            <li className="ml-4">Khay M18: 24.5 x 17.5 x 2.2 cm</li>
           </ul>
 
         </section>
@@ -187,8 +188,9 @@ export default function KhayXop() {
 
   <div className="grid grid-cols-2 gap-2 md:gap-4 py-3 md:py-4">
     
-    {/* CARD 3 */}
+    {/* CARD 3 */}<a href='https://zalo.me/0941027800'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">
+      
       <img
         src="/avt_customer/LanTa.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
@@ -198,6 +200,7 @@ export default function KhayXop() {
         <p className="text-xs md:text-2xl break-all">0941 027 800</p>
       </div>
     </div>
+    </a>
 
     {/* CARD 4 */}
     <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">

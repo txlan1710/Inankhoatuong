@@ -37,16 +37,16 @@ export default function DecalRider() {
           <div className="space-y-4 leading-relaxed text-sm sm:text-base">
 
             <div>
-              <h3 className="font-semibold text-base sm:text-lg mb-1">
+              <h3 className=" indent-4 sm:indent-8 font-semibold text-base sm:text-lg mb-1">
                 Cung cấp đầy đủ thông tin sản phẩm
               </h3>
-              <p className="indent-4 sm:indent-8">
-                Tem nhãn thể hiện các thông tin quan trọng như: Tên sản phẩm, Thành phần, Trọng lượng, Ngày sản xuất – hạn sử dụng, Hướng dẫn bảo quản, Thông tin nhà sản xuất. Điều này giúp khách hàng dễ dàng nhận biết và tin tưởng sản phẩm.
+              <p className="pl-4 sm:pl-8">
+                Tem nhãn thể hiện các thông tin quan trọng như: <strong>Tên sản phẩm, Thành phần, Trọng lượng, Ngày sản xuất – hạn sử dụng, Hướng dẫn bảo quản, Thông tin nhà sản xuất </strong>. Điều này giúp khách hàng dễ dàng nhận biết và tin tưởng sản phẩm.
               </p>
             </div>
 
             <div>
-              <h3 className="font-semibold text-base sm:text-lg mb-1">
+              <h3 className="indent-4 sm:indent-8 font-semibold text-base sm:text-lg mb-1">
                 Tăng nhận diện thương hiệu
               </h3>
               <p className="indent-4 sm:indent-8">
@@ -55,7 +55,7 @@ export default function DecalRider() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-base sm:text-lg mb-1">
+              <h3 className="font-semibold text-base sm:text-lg mb-1 indent-4 sm:indent-8">
                 Chống nước – chống bong tróc
               </h3>
               <p className="indent-4 sm:indent-8">
@@ -95,6 +95,13 @@ export default function DecalRider() {
             <p className="indent-4 sm:indent-8 mb-3 text-sm sm:text-base">
               Decal PVC có độ bền cao, được sử dụng phổ biến trong ngành thủy sản.
             </p>
+            <ul className="list-disc pl-5 sm:pl-6 space-y-1 text-sm sm:text-base">
+              <li className="ml-8">Chống nước tuyệt đối</li>
+              <li className="ml-8">Không rách, không phai màu</li>
+              <li className="ml-8">Chịu đông lạnh</li>
+              <li className="ml-8">Bám dính tốt</li>
+              <li className="ml-8">Không bị nhòe mực</li>
+            </ul>
 
             <figure className="flex justify-center mb-3">
               <img
@@ -103,32 +110,7 @@ export default function DecalRider() {
               />
             </figure>
 
-            <ul className="list-disc pl-5 sm:pl-6 space-y-1 text-sm sm:text-base">
-              <li>Chống nước tuyệt đối</li>
-              <li>Không rách, không phai màu</li>
-              <li>Chịu đông lạnh</li>
-              <li>Bám dính tốt</li>
-            </ul>
-
-          </article>
-
-          {/* PP */}
-          <article className="mb-6">
-
-            <h3 className="text-lg sm:text-xl font-semibold mb-2">
-              Decal Nhựa PP
-            </h3>
-
-            <p className="indent-4 sm:indent-8 mb-3 text-sm sm:text-base">
-              Chi phí thấp hơn PVC nhưng vẫn bền.
-            </p>
-
-            <figure className="flex justify-center mb-3">
-              <img
-                src="/imgs/Decal Nhựa PP.svg"
-                className="w-full sm:w-[80%] md:w-[65%] rounded-lg"
-              />
-            </figure>
+            
 
           </article>
           <article className="mb-6">
@@ -138,12 +120,19 @@ export default function DecalRider() {
             </h3>
 
             <p className="indent-4 sm:indent-8 mb-3 text-sm sm:text-base">
-              Chi phí thấp hơn PVC nhưng vẫn bền.
+              Có độ trong suốt cao, bám dính tốt, đảm bảo đáp ưng được trong môi trường đông lạnh. 
             </p>
+            <ul className="list-disc pl-5 sm:pl-6 space-y-1 text-sm sm:text-base">
+              <li className="ml-8">Chống nước tuyệt đối</li>
+              <li className="ml-8">Không rách, không phai màu</li>
+              <li className="ml-8">Chịu đông lạnh</li>
+              <li className="ml-8">Bám dính tốt</li>
+              <li className="ml-8">Không bị nhòe mực</li>
+            </ul>
 
             <figure className="flex justify-center mb-3">
               <img
-                src="/imgs/Decal Nhựa PP.svg"
+                src="/imgs/Decal Trong.svg"
                 className="w-full sm:w-[80%] md:w-[65%] rounded-lg"
               />
             </figure>
@@ -185,7 +174,7 @@ export default function DecalRider() {
         Bước 1: Tiếp nhận yêu cầu & tư vấn vật liệu
       </h3>
       <p className=" pl-4 sm:pl-8">
-        Tiếp nhận thông tin về sản phẩm, điều kiện bảo quản, kích thước bao bì và yêu cầu QR, barcode. Từ đó tư vấn các loại decal phù hợp như PVC, PP, PET chịu lạnh, decal chống nước hoặc decal đông lạnh chuyên dụng.
+        Tiếp nhận thông tin về sản phẩm, điều kiện bảo quản, kích thước bao bì và yêu cầu QR, barcode. Từ đó tư vấn các loại decal phù hợp như decal pvc, decal trong chịu lạnh, decal chống nước hoặc decal đông lạnh chuyên dụng.
       </p>
     </div>
 
