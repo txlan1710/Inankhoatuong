@@ -1,7 +1,45 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+function Counter({ target }: { target: number }) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const started = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !started.current) {
+          started.current = true;
+
+          let start = 0;
+          const duration = 1500;
+          const increment = target / (duration / 16);
+
+          const timer = setInterval(() => {
+            start += increment;
+
+            if (start >= target) {
+              setCount(target);
+              clearInterval(timer);
+            } else {
+              setCount(Math.floor(start));
+            }
+          }, 16);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [target]);
+
+  return <div ref={ref}>{count.toLocaleString()}</div>;
+}
 
 export default function CustomerSection() {
+
   const [current, setCurrent] = useState(0);
 
   const customers = [
@@ -59,9 +97,33 @@ export default function CustomerSection() {
   };
 
   return (
-    <section className="py-8 md:py-12 bg-gray-100">
-
+    <section >
+      <section className="pb-8">
+      <div className="bg-gradient-to-r from-[#184e86] to-[#60a5fa] text-white py-10"> 
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 text-center divide-y md:divide-y-0 md:divide-x divide-white/30"> 
+        <div className="py-4"> 
+          <h3 className="text-3xl md:text-4xl font-bold">
+            <Counter target={1200} />
+          </h3>
+          <p className="text-sm mt-2">KHÁCH HÀNG LỚN - NHỎ</p> 
+        </div> 
+        <div className="py-4"> 
+          <h3 className="text-3xl md:text-4xl font-bold">
+            <Counter target={320} />
+          </h3>
+          <p className="text-sm mt-2">MẪU MÃ ĐẸP VÀ HỢP TREND</p> 
+        </div> 
+        <div className="py-4"> 
+          <h3 className="text-3xl md:text-4xl font-bold">
+            <Counter target={7} />
+          </h3>
+          <p className="text-sm mt-2">KINH NGHIỆM THIẾT KẾ & IN ẤN</p> 
+        </div> 
+      </div>
+      </div>
+      </section >
       {/* TITLE */}
+      <section className="py-8 md:py-12 bg-gray-100">
       <h2 className="text-center text-xl sm:text-2xl md:text-3xl font-bold mb-6 md:mb-10 text-[#184e86]">
         ĐÁNH GIÁ KHÁCH HÀNG
       </h2>
@@ -153,7 +215,7 @@ export default function CustomerSection() {
           →
         </button>
       </div>
-
+    </section>
     </section>
   );
 }
