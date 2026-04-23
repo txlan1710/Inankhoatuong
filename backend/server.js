@@ -10,13 +10,13 @@ app.use(express.json());
 const db = mysql.createPool({
   host: "localhost",
   user: "root",
-  password: "Jiyeon12345!", 
+  password: "", 
   database: "contact_db",
 });
 
 // API nhận dữ liệu từ frontend
 app.post("/api/contact", (req, res) => {
-  const { name, phone, email, address, service } = req.body;
+  const { name, phone, email, service } = req.body;
 
   // check dữ liệu
   if (!name || !phone) {
@@ -24,11 +24,11 @@ app.post("/api/contact", (req, res) => {
   }
 
   const sql = `
-    INSERT INTO contacts (name, phone, email, address, service)
-    VALUES (?, ?, ?, ?, ?)
+    INSERT INTO contacts (name, phone, email, service)
+    VALUES (?, ?, ?, ?)
   `;
 
-  db.query(sql, [name, phone, email, address, service], (err, result) => {
+  db.query(sql, [name, phone, email, service], (err, result) => {
     if (err) {
       console.log(err);
       return res.status(500).json({ message: "Lỗi server" });

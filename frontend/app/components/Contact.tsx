@@ -7,7 +7,6 @@ export default function LienHe() {
     name: "",
     phone: "",
     email: "",
-    address: "",
     service: "In Tem Nhãn",
   });
 
@@ -33,7 +32,6 @@ export default function LienHe() {
     name: "",
     phone: "",
     email: "",
-    address: "",
     service: "In Tem Nhãn",
   });
 
@@ -120,15 +118,6 @@ export default function LienHe() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Email (*)"
-                className="w-full border-b outline-none py-2 bg-transparent"
-              />
-
-              <input
-                type="text"
-                name="address"
-                value={form.address}
-                onChange={handleChange}
-                placeholder="Địa chỉ"
                 className="w-full border-b outline-none py-2 bg-transparent"
               />
 

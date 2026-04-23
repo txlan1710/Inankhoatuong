@@ -14,8 +14,8 @@ const categories = [
 
 export default function ProductCategories() {
   return (
+  
     <section className="py-6 md:py-10 bg-secondary max-w-7xl mx-auto px-3 sm:px-4 md:px-6">
-
       {/* TITLE */}
       <div className="text-center mb-6 md:mb-10">
         <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-[#184e86]">
@@ -76,6 +76,8 @@ export default function ProductCategories() {
           </Link>
         ))}
       </div>
+
     </section>
+    
   );
 }

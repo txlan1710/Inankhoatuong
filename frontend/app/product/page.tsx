@@ -1,10 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductContent from "../components/ProductContent"
-
-
-
-
+import ContactFloat from '../components/ContactFloat';
 
 export default function Product() {
   return (
@@ -12,6 +9,7 @@ export default function Product() {
       <Header />
       <ProductContent />
       <Footer />
+      <ContactFloat />
     </div>
   );
 }

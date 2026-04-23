@@ -1,15 +1,16 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Link from "next/link";
 
 const slides = [
-  { img: "/banner/Banner-DecalRiderThuySan.svg" },
-  { img: "/banner/Banner-Tui.svg" },
-  { img: "/banner/Banner-Decal.svg" },
-  { img: "/banner/Banner-BangKeo.svg" },
-  { img: "/banner/Banner-KhayXop.svg" },
-  { img: "/banner/Banner-Bat.svg" },
+  { img: "/banner/Banner-DecalRiderThuySan.svg", link: "/Decal_Rider" },
+  { img: "/banner/Banner-Tui.svg", link: "/PA_PE" },
+  { img: "/banner/Banner-Decal.svg", link: "" },
+  { img: "/banner/Banner-BangKeo.svg", link: "/Bangkeo" },
+  { img: "/banner/Banner-KhayXop.svg", link: "/Khayxop" },
+  { img: "/banner/Banner-Bat.svg", link: "/InBac" },
 ];
 
 export default function HeroBanner() {
@@ -24,49 +25,46 @@ export default function HeroBanner() {
   };
 
   return (
-    <section className="w-full ">
-      {/* <div className="relative w-full overflow-hidden max-w-7xl mx-auto py-4 md:py-12"> */}
-
-        {/* container có perspective */}
-        <div className="relative w-full h-[180px] sm:h-[220px] md:h-[600px]"
-             style={{ perspective: "1000px" }}>
-
-
-
-                      {slides.map((slide, i) => (
+    <section className="w-full relative">
+      <div
+        className="relative w-full h-[180px] sm:h-[220px] md:h-[600px]"
+        style={{ perspective: "1000px" }}
+      >
+        {slides.map((slide, i) => (
+          <Link key={i} href={slide.link || "#"}>
             <Image
-              key={i}
               src={slide.img}
               alt=""
               fill
               className={`
-  absolute top-0 left-0 object-contain rounded-lg
-  transition-all duration-700 ease-in-out
-  ${i === index 
-    ? "opacity-100 scale-100 z-10" 
-    : "opacity-0 scale-110 z-0"}
-`}
+                absolute top-0 left-0 object-contain rounded-lg
+                transition-all duration-700 ease-in-out
+                ${
+                  i === index
+                    ? "opacity-100 scale-100 z-10"
+                    : "opacity-0 scale-110 z-0"
+                }
+              `}
             />
-          ))}
-        </div>
+          </Link>
+        ))}
+      </div>
 
-        {/* NEXT */}
-        <button
-          onClick={nextSlide}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#184e86]"
-        >
-          <FaChevronRight className="text-3xl md:text-4xl" />
-        </button>
+      {/* NEXT */}
+      <button
+        onClick={nextSlide}
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#184e86]"
+      >
+        <FaChevronRight className="text-3xl md:text-4xl" />
+      </button>
 
-        {/* PREV */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-[#184e86]"
-        >
-          <FaChevronLeft className="text-3xl md:text-4xl" />
-        </button>
-
-      {/* </div> */}
+      {/* PREV */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-[#184e86]"
+      >
+        <FaChevronLeft className="text-3xl md:text-4xl" />
+      </button>
     </section>
   );
 }

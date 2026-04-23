@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* CỘT 1 */}
         <div>
-          <h3 className="font-semibold text-xs md:text-lg mb-1">THÔNG TIN CHUNG</h3>
+          <h3 className="font-semibold md:text-lg mb-1 text-xl">THÔNG TIN CHUNG</h3>
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <h3 className="text-[10px] md:text-lg font-bold mb-2 md:mb-4 leading-tight">
@@ -19,20 +19,22 @@ export default function Footer() {
             <li>☎ 0948 133 600 - 0911 828 978</li>
             <li className="truncate">📬 lenghiabaobi@gmail.com</li>
             <li className="leading-tight">
-              📌 26B Huỳnh Thúc Kháng, Cà Mau
+              📌 26B Huỳnh Thúc Kháng, Khóm 7, Phường Hòa Thành, Tỉnh Cà Mau
             </li>
           </ul>
-
-          <ul className="pt-2 md:pt-5 text-[10px] md:text-base">
-            <li><strong>Giờ làm việc:</strong></li>
-            <li>07:00 - 17:00</li>
-            <li>Từ T2 đến CN</li>
-          </ul>
+          <div className="py-3">
+            <h3 className="font-semibold text-xl">GIỜ LÀM VIỆC:</h3>
+            <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
+            <ul className="list-disc pl-5 sm:pl-6 space-y-1 text-sm sm:text-base">
+                <li className="ml-8">07:00 - 17:00</li>
+                <li className="ml-8">Từ T2 đến CN</li>
+              </ul>
+          </div>
         </div>
 
         {/* CỘT 2 */}
         <div>
-          <h3 className="font-semibold text-xs md:text-lg mb-1">DANH MỤC</h3>
+          <h3 className="font-semibold text-xl md:text-lg mb-1">DANH MỤC</h3>
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <ul className="space-y-1 text-[10px] md:text-base">
@@ -47,7 +49,7 @@ export default function Footer() {
 
         {/* CỘT 3 */}
         <div>
-          <h3 className="font-semibold text-xs md:text-lg mb-1">KẾT NỐI</h3>
+          <h3 className="font-semibold text-xl md:text-lg mb-1">KẾT NỐI</h3>
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <div className="flex items-center gap-2">

@@ -5,8 +5,10 @@ import ContactFloat from './components/ContactFloat';
 import WhyChooseUs from './components/WhyChooseUs';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import Feedback from './components/Feedback';
+// import Feedback from './components/Feedback';
 import ContactForm from './components/ContactForm';
+import ContactInfo from './components/ContactInfo';
+
 
 export default function Home() {
   return (
@@ -14,11 +16,11 @@ export default function Home() {
       <Header />
       <Banner />
       <ProductCategories />
-      <Feedback />
+      {/* <Feedback /> */}
       <WhyChooseUs />
       <ContactForm />
       <Content />
-      
+      <ContactInfo />
       <Footer />
       <ContactFloat />
 

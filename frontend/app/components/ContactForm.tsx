@@ -26,17 +26,30 @@ export default function ContactForm() {
 };
 
   const handleSubmit = async () => {
-  console.log(form);
 
-  // 👉 giả lập thành công
+  // ✅ luôn hiện popup
   setShowSuccess(true);
 
+  // (tuỳ chọn) reset form luôn
   setForm({
     name: "",
     phone: "",
     email: "",
     service: "In Tem Nhãn",
   });
+
+  // 👉 nếu bạn vẫn muốn gọi API thì để dưới (không ảnh hưởng UI)
+  try {
+    await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+  } catch (error) {
+    console.error("API lỗi (bỏ qua):", error);
+  }
 };
 
   return (
@@ -105,6 +118,7 @@ export default function ContactForm() {
 
           {/* BUTTON */}
           <button
+          type="button"
             onClick={handleSubmit}
             className="mt-4 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded transition"
           >
