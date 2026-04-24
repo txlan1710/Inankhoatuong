@@ -61,7 +61,7 @@ export default function ProductCategories() {
     
     {/* tên */}
     <p className="mt-2 md:mt-3 px-1 font-bold text-[#184e86] 
-      text-xs sm:text-sm md:text-base line-clamp-2 min-h-[40px]">
+      text-xs sm:text-sm md:text-base line-clamp-2 min-h-[40px] hover:text-yellow-400 transition-colors duration-300">
       {cat.name}
     </p>
 

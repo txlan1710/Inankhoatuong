@@ -25,35 +25,28 @@ export default function HeroBanner() {
   };
 
   return (
-    <section className="w-full relative">
+    <section className="w-full relative ">
       <div
-        className="relative w-full h-[180px] sm:h-[220px] md:h-[600px]"
+        className="relative w-full h-[180px] sm:h-[220px] md:h-[650px] "
         style={{ perspective: "1000px" }}
       >
-        {slides.map((slide, i) => (
-          <Link key={i} href={slide.link || "#"}>
-            <Image
-              src={slide.img}
-              alt=""
-              fill
-              className={`
-                absolute top-0 left-0 object-contain rounded-lg
-                transition-all duration-700 ease-in-out
-                ${
-                  i === index
-                    ? "opacity-100 scale-100 z-10"
-                    : "opacity-0 scale-110 z-0"
-                }
-              `}
-            />
-          </Link>
-        ))}
+        
+         <Link href={slides[index].link || "#"}>
+          <Image
+            src={slides[index].img}
+            alt="banner"
+            fill
+            priority={index === 0} // ✅ preload ảnh đầu
+            // sizes="(max-width: 768px) 100vw, 100vw" // ✅ responsive
+            className="object-contain rounded-lg"
+          />
+        </Link>
       </div>
 
       {/* NEXT */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#184e86]"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#184e86] hover:text-yellow-400 transition-colors duration-300"
       >
         <FaChevronRight className="text-3xl md:text-4xl" />
       </button>
@@ -61,7 +54,7 @@ export default function HeroBanner() {
       {/* PREV */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-[#184e86]"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-[#184e86] hover:text-yellow-400 transition-colors duration-300"
       >
         <FaChevronLeft className="text-3xl md:text-4xl" />
       </button>
