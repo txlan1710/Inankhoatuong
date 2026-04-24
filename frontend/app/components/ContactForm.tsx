@@ -30,7 +30,7 @@ export default function ContactForm() {
   // ✅ luôn hiện popup
   setShowSuccess(true);
 
-  // (tuỳ chọn) reset form luôn
+  // (tuỳ chọn) reset Sform luôn
   setForm({
     name: "",
     phone: "",
@@ -40,7 +40,7 @@ export default function ContactForm() {
 
   // 👉 nếu bạn vẫn muốn gọi API thì để dưới (không ảnh hưởng UI)
   try {
-    await fetch("/api/contact", {
+    await fetch("http://localhost:5000/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

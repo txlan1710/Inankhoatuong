@@ -37,7 +37,7 @@ export default function LienHe() {
 
   // 👉 nếu bạn vẫn muốn gọi API thì để dưới (không ảnh hưởng UI)
   try {
-    await fetch("/api/contact", {
+    await fetch("http://localhost:5000/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
