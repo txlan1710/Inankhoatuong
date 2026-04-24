@@ -46,7 +46,10 @@ export default function HeroBanner() {
       {/* NEXT */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-[#184e86] hover:text-yellow-400 transition-colors duration-300"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 
+  backdrop-blur-sm 
+  rounded-full p-3 
+  transition duration-300 hover:text-yellow-400"
       >
         <FaChevronRight className="text-3xl md:text-4xl" />
       </button>
@@ -54,7 +57,11 @@ export default function HeroBanner() {
       {/* PREV */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 text-[#184e86] hover:text-yellow-400 transition-colors duration-300"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 
+  text-white bg-black/30 hover:bg-black/50 
+  backdrop-blur-sm 
+  rounded-full p-3 
+  transition duration-300 hover:text-yellow-400"
       >
         <FaChevronLeft className="text-3xl md:text-4xl" />
       </button>

@@ -38,12 +38,12 @@ export default function Footer() {
           <div className="w-8 md:w-12 h-[2px] md:h-[3px] bg-black mb-2"></div>
 
           <ul className="space-y-1 text-[10px] md:text-base">
-            <li><a href="/Decal_Rider" className="hover:text-[#3dbeb3]">Decal</a></li>
-            <li><a href="/Khayxop" className="hover:text-[#3dbeb3]">Khay xốp</a></li>
-            <li><a href="/Bangkeo" className="hover:text-[#3dbeb3]">Túi PA PE</a></li>
-            <li><a href="/PA_PE" className="hover:text-[#3dbeb3]">Tem nhãn</a></li>
-            <li><a href="/InBac" className="hover:text-[#3dbeb3]">In bạt</a></li>
-            <li><a href="/Menu" className="hover:text-[#3dbeb3]">Menu</a></li>
+            <li><a href="/Decal_Rider" className="hover:text-[#3dbeb3]">DECAL</a></li>
+            <li><a href="/Khayxop" className="hover:text-[#3dbeb3]">KHAY XỐP</a></li>
+            <li><a href="/Bangkeo" className="hover:text-[#3dbeb3]">TÚI PA PE</a></li>
+            <li><a href="/PA_PE" className="hover:text-[#3dbeb3]">TEM NHÃN</a></li>
+            <li><a href="/InBac" className="hover:text-[#3dbeb3]">IN BẠT</a></li>
+            <li><a href="/Menu" className="hover:text-[#3dbeb3]">MENU</a></li>
           </ul>
         </div>
 
