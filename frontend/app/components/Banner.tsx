@@ -16,6 +16,10 @@ const slides = [
 export default function HeroBanner() {
   const [index, setIndex] = useState(0);
 
+  // ✅ swipe state phải nằm trong component
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % slides.length);
   };
@@ -25,45 +29,64 @@ export default function HeroBanner() {
   };
 
   return (
-    <section className="w-full relative ">
+    <section className="w-full relative">
+      {/* ✅ GẮN SWIPE VÀO ĐÂY */}
       <div
-        className="relative w-full h-[180px] sm:h-[220px] md:h-[650px] "
-        style={{ perspective: "1000px" }}
+        className="relative w-full h-[180px] sm:h-[220px] md:h-[650px]"
+        onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
+        onTouchMove={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+        onTouchEnd={() => {
+          const distance = touchStart - touchEnd;
+
+          if (distance > 50) nextSlide();     // vuốt trái
+          if (distance < -50) prevSlide();    // vuốt phải
+        }}
       >
-        
-         <Link href={slides[index].link || "#"}>
+        <Link href={slides[index].link || "#"}>
           <Image
             src={slides[index].img}
             alt="banner"
             fill
-            priority={index === 0} // ✅ preload ảnh đầu
-            // sizes="(max-width: 768px) 100vw, 100vw" // ✅ responsive
+            priority={index === 0}
+            sizes="100vw"
             className="object-contain rounded-lg"
           />
         </Link>
       </div>
 
-      {/* NEXT */}
+      {/* DOTS mobile */}
+      <div className="absolute bottom-2 w-full flex justify-center gap-2 md:hidden">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setIndex(i)}
+            className={`h-2 w-2 rounded-full transition-all ${
+              i === index ? "bg-[#184e86] w-4" : "bg-[#184e86]/40"
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* NEXT (desktop only) */}
       <button
         onClick={nextSlide}
-        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 text-white bg-black/30 hover:bg-black/50 
-  backdrop-blur-sm 
-  rounded-full p-3 
-  transition duration-300 hover:text-yellow-400"
+        className="hidden md:flex absolute right-4 top-1/2 -translate-y-1/2
+        text-white bg-black/30 hover:bg-black/50
+        backdrop-blur-sm rounded-full p-3
+        transition duration-300 hover:text-yellow-400 active:scale-90"
       >
-        <FaChevronRight className="text-3xl md:text-4xl" />
+        <FaChevronRight className="text-4xl" />
       </button>
 
-      {/* PREV */}
+      {/* PREV (desktop only) */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 
-  text-white bg-black/30 hover:bg-black/50 
-  backdrop-blur-sm 
-  rounded-full p-3 
-  transition duration-300 hover:text-yellow-400"
+        className="hidden md:flex absolute left-4 top-1/2 -translate-y-1/2
+        text-white bg-black/30 hover:bg-black/50
+        backdrop-blur-sm rounded-full p-3
+        transition duration-300 hover:text-yellow-400 active:scale-90"
       >
-        <FaChevronLeft className="text-3xl md:text-4xl" />
+        <FaChevronLeft className="text-4xl" />
       </button>
     </section>
   );
