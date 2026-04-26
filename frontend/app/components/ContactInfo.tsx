@@ -12,7 +12,7 @@ export default function ContactInfo() {
 
         {/* ===== LIST CONTACT ===== */}
         <div className="grid grid-cols-2 gap-2 md:gap-4">
-            <a href='https://zalo.me/0941027800'>
+            <a href='https://zalo.me/0911828978'>
             <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
             
             <img

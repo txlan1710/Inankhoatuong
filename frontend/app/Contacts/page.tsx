@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import Content from "../components/Contact";
 import ContactFloat from '../components/ContactFloat';
 import { Nunito } from "next/font/google";
-
+import type { Metadata } from "next";
 const nunito = Nunito({
   subsets: ["latin"],
 });

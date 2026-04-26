@@ -5,12 +5,12 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 
 const slides = [
-  { img: "/banner/Banner-DecalRiderThuySan.svg", link: "/Decal_Rider" },
-  { img: "/banner/Banner-Tui.svg", link: "/PA_PE" },
-  { img: "/banner/Banner-Decal.svg", link: "" },
-  { img: "/banner/Banner-BangKeo.svg", link: "/Bangkeo" },
-  { img: "/banner/Banner-KhayXop.svg", link: "/Khayxop" },
-  { img: "/banner/Banner-Bat.svg", link: "/InBac" },
+  { img: "/banner/Banner-DecalRiderThuySan.png", link: "/Decal_Rider" },
+  { img: "/banner/Banner-Tui.png", link: "/PA_PE" },
+  { img: "/banner/Banner-Decal.png", link: "" },
+  { img: "/banner/Banner-BangKeo.png", link: "/Bangkeo" },
+  { img: "/banner/Banner-KhayXop.png", link: "/Khayxop" },
+  { img: "/banner/Banner-Bat.png", link: "/InBac" },
 ];
 
 export default function HeroBanner() {
@@ -29,6 +29,7 @@ export default function HeroBanner() {
   };
 
   return (
+  
     <section className="w-full relative">
       {/* ✅ GẮN SWIPE VÀO ĐÂY */}
       <div

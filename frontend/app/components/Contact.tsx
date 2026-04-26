@@ -78,7 +78,7 @@ export default function LienHe() {
               <p>📍 26B Huỳnh Thúc Kháng, TP Cà Mau</p>
               <p>📞 0948 133 600 - 0911 828 978</p>
               <p>📧 lenghiabaobi@gmail.com</p>
-              <p>🌐 inankhoatuong.com</p>
+              <p>🌐 inankhoatuong.vn</p>
             </div>
 
             <div className="w-full h-[120px] md:h-[300px] rounded overflow-hidden mt-3">

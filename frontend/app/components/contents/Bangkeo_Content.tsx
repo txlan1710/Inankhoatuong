@@ -16,6 +16,7 @@ export default function Partners() {
 
         <img
           src="/imgs/Băng Keo/BăngKeo06.svg"
+          alt="Băng keo chất lượng cao dùng cho đóng gói thủy sản và kho vận tại Cà Mau"
           className="w-[60%] mx-auto mb-4"
         />
 
@@ -31,6 +32,8 @@ export default function Partners() {
 
           <img
             src="/imgs/Băng Keo/BăngKeo04.svg"
+            alt="Các loại băng keo phổ biến: trong, đục, màu, hai mặt"
+            loading="lazy"
             className="w-[60%] mx-auto mb-4"
           />
 
@@ -55,6 +58,8 @@ export default function Partners() {
 
           <img
             src="/imgs/Băng Keo/BăngKeo07.svg"
+            alt="Bảng quy cách băng keo OPP đa dạng kích thước và độ dày"
+            loading="lazy"
             className="w-[60%] mx-auto mb-4"
           />
 
@@ -107,6 +112,8 @@ export default function Partners() {
 
           <img
             src="/imgs/Băng Keo/BăngKeo03.svg"
+            alt="Ưu điểm băng keo OPP: độ bám dính cao, bền chắc, đa dạng kích thước"
+            loading="lazy"
             className="w-[50%] mx-auto mt-4"
           />
         </section>
@@ -127,6 +134,8 @@ export default function Partners() {
 
           <img
             src="/imgs/Băng Keo/BăngKeo01.svg"
+            alt="Ứng dụng băng keo trong đóng gói carton, logistics và thương mại điện tử"
+            loading="lazy"
             className="w-[50%] mx-auto mt-4"
           />
 
@@ -145,7 +154,90 @@ export default function Partners() {
 
   {/* ===== LIST CONTACT ===== */}
   <div className="grid grid-cols-2 gap-2 md:gap-4">
-    <a href='https://zalo.me/0941027800'>
+    <a href='https://zalo.me/0911828978'>
+    <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
+      
+      <img
+        src="/avt_customer/BichLan.jpg"
+        alt="Liên hệ tư vấn viên Bích Lan qua Zalo"
+        loading="lazy"
+        className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+      />
+      <div className="min-w-0">
+        <b className="text-sm md:text-2xl">Bích Lan</b>
+        <p className="text-xs md:text-2xl break-all">0911.828.978</p>
+      </div>
+      
+    </div>
+    </a>
+
+    {/* CARD 2 */}
+    <a href='https://zalo.me/0948133600'>
+    <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
+      
+      <img
+        src="/avt_customer/HuuNghia.jpg"
+        alt="Liên hệ tư vấn viên Lê Nghĩa qua Zalo"
+        loading="lazy"
+        className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+      />
+      <div className="min-w-0">
+        <b className="text-sm md:text-2xl">Lê Nghĩa</b>
+        <p className="text-xs md:text-2xl break-all">0948.133.600</p>
+      </div>
+    </div>
+    </a>
+  </div>
+  
+
+  <div className="grid grid-cols-2 gap-2 md:gap-4 py-3 md:py-4">
+    
+    {/* CARD 3 */}<a href='https://zalo.me/0941027800'>
+    <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">
+      
+      <img
+        src="/avt_customer/LanTa.jpg"
+        alt="Liên hệ tư vấn viên Xuân Lan qua Zalo"
+        loading="lazy"
+        className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+      />
+      <div className="min-w-0">
+        <b className="text-sm md:text-2xl">Xuân Lan</b>
+        <p className="text-xs md:text-2xl break-all">0941.027.800</p>
+      </div>
+    </div>
+    </a>
+
+    {/* CARD 4 */}
+    <a href='https://zalo.me/0989859415'>
+    <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">
+      
+      <img
+        src="/avt_customer/ThuanTran.jpg"
+        alt="Liên hệ tư vấn viên Thuận Trần qua Zalo"
+        loading="lazy"
+        className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+      />
+      <div className="min-w-0">
+        <b className="text-sm md:text-2xl">Thuận Trần</b>
+        <p className="text-xs md:text-2xl break-all">0989.859.415</p>
+      </div>
+    </div>
+    </a>
+  </div>
+</section>
+<section className="">
+  {/* ===== TITLE ===== */}
+  <div className="text-center py-6 md:py-10">
+    <h2 className="text-xl md:text-4xl font-bold text-[#184e86]">
+      LIÊN HỆ TƯ VẤN
+    </h2>
+    <div className="w-12 md:w-16 h-1 bg-[#184e86] mx-auto mt-2 md:mt-3"></div>
+  </div>
+
+  {/* ===== LIST CONTACT ===== */}
+  <div className="grid grid-cols-2 gap-2 md:gap-4">
+    <a href='https://zalo.me/0911828978'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
       
       <img
@@ -214,3 +306,4 @@ export default function Partners() {
     </main>
   );
 }
+

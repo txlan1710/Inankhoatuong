@@ -40,8 +40,9 @@ export default function Footer() {
           <ul className="space-y-3 md:space-y-1 text-sm md:text-base">
             <li><a href="/Decal_Rider" className="hover:text-[#3dbeb3] block py-2 md:py-0">DECAL</a></li>
             <li><a href="/Khayxop" className="hover:text-[#3dbeb3] block py-2 md:py-0">KHAY XỐP</a></li>
-            <li><a href="/Bangkeo" className="hover:text-[#3dbeb3] block py-2 md:py-0">TÚI PA PE</a></li>
-            <li><a href="/PA_PE" className="hover:text-[#3dbeb3] block py-2 md:py-0">TEM NHÃN</a></li>
+            <li><a href="/PA_PE" className="hover:text-[#3dbeb3] block py-2 md:py-0">TÚI PA PE</a></li>
+            <li><a href="/Bangkeo" className="hover:text-[#3dbeb3] block py-2 md:py-0">BĂNG KEO</a></li>
+            <li><a href="/Decal_AV" className="hover:text-[#3dbeb3] block py-2 md:py-0">TEM NHÃN</a></li>
             <li><a href="/InBac" className="hover:text-[#3dbeb3] block py-2 md:py-0">IN BẠT</a></li>
             <li><a href="/Menu" className="hover:text-[#3dbeb3] block py-2 md:py-0">MENU</a></li>
           </ul>
