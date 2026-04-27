@@ -10,7 +10,7 @@ const categories = [
     { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', img: '/imgProduct/TemTron/1.svg', hoverImg: '/imgProduct/TemTron/hoverImg/Tem-T2.svg', link: '/Decal_AV'},
     { name: 'In Bạt & In Decal Khổ Lớn', desc: 'In Bạt & In Decal Khổ Lớn.', img: '/imgProduct/12.svg', hoverImg: '/imgProduct/13.svg', link: '/InBac'},
     { name: 'In Menu', desc: 'Thiết kế menu đẹp cho quán.', img: '/imgProduct/10.svg', hoverImg: '/imgProduct/11.svg', link: '/Menu'},
-    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', img: '/imgProduct/In-Catalogue-03.png', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/Catalogue'},
+    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', img: '/imgProduct/Catalogue-01.jpg', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/Catalogue'},
     { name: 'In Hộp', desc: 'In hộp giấy theo yêu cầu, hộp mỹ phẩm, hộp quà tặng cao cấp.', img: '/imgProduct/Mau-hop-02.svg', hoverImg: '/imgProduct/Mau-hop-03.svg', link: '/HopGiay'},
     { name: 'In Voucher & Namecard', desc: 'In voucher và name card đẹp, sắc nét, lấy nhanh tại Cà Mau.', img: '/imgProduct/Card-Visit-01.svg', hoverImg: '/imgProduct/Card-Visit-03.svg', link: '/Card'},
 ];
