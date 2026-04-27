@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "CÔNG TY TNHH SX & TM KHOA TƯỜNG",
   description: "Chuyên in ấn decal Cà Mau",
   icons: {
-    icon: "/favicon.jpg", 
+    icon: "/favicon.ico", 
   },
 };
 
