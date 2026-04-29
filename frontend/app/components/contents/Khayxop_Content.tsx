@@ -1,4 +1,3 @@
-import Link from 'next/link';
 export default function KhayXop() {
   return (
     <main className="w-full bg-white text-gray-800">

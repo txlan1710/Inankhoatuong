@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Cung cấp khay xốp đựng thực phẩm, thủy sản chất lượng cao, giá rẻ tại Cà Mau.",
     url: "https://inankhoatuong.vn/khay-xop",
-    siteName: "In Ấn Khôi Tường",
+    siteName: "In Ấn Khoa Tường",
 
     images: [
       {

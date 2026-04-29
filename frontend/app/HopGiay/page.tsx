@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "In Ấn Khoa Tường",
     images: [
       {
-        url: "/favicon.ico",
+        url: "/favicon.ico", 
         width: 1200,
         height: 630,
         alt: "In hộp giấy Cà Mau",

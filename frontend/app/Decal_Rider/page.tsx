@@ -10,7 +10,7 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "In Decal Thủy Sản & Rider Tại Cà Mau | In Ấn Khôi Tường",
+  title: "In Decal Thủy Sản & Rider Tại Cà Mau | In Ấn Khoa Tường",
   description:
     "Chuyên in decal thủy sản, tem nhãn đông lạnh, rider tại Cà Mau. Chống nước, chịu lạnh, bám dính tốt, in nhanh, giá rẻ.",
   keywords: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description:
       "In tem nhãn thủy sản, decal chống nước, chịu lạnh, rider chuyên nghiệp tại Cà Mau.",
     url: "https://inankhoatuong.vn/decal-thuy-san",
-    siteName: "In Ấn Khôi Tường",
+    siteName: "In Ấn Khoa Tường",
     images: [
       {
         url: "/imgs/imgsp.jpg",

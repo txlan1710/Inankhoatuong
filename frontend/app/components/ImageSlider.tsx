@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 const images = [
   "/imgs/CTY/KhoaTuong01.svg",
   "/imgs/CTY/KhoaTuong02.svg",
@@ -22,10 +22,12 @@ export default function ImageSlider() {
 
   return (
     <div className="w-full max-w-[500px] h-[200px] md:h-[300px] overflow-hidden rounded-2xl mx-auto">
-      <img
+      <Image
         src={images[index]}
-        className="w-full h-full object-cover transition-opacity duration-700"
+        fill
+        className="object-cover"
         alt="Khoa Tuong"
+        priority={index === 0}
       />
     </div>
   );

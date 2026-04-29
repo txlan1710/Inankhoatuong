@@ -1,22 +1,4 @@
-  import Link from "next/link";
-const categories = [
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/09/CARRD-04-scaled.png', hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Khayxop' },
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/09/CARRD-04-scaled.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Khayxop' },
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/09/CARRD-04-scaled.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Khayxop' },
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/09/CARRD-04-scaled.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Khayxop' },
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/09/CARRD-04-scaled.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png',hoverImg: 'https://innhanhtphcm.com/wp-content/uploads/2025/03/In-Card-Giay-My-Thuat-Co-Van-Moc3.png', link: '/Khayxop' },
-    // { name: 'Băng Keo', desc: 'Băng keo dán tem, bao bì.', img: '/ProductCategories/Bangkeo01.svg', link: '/Bangkeo' },
-    // { name: 'In Túi PA/PE', desc: 'In túi PE, PA chất lượng cho thủy sản và nhiều ngành nghề khác.', img: '/ProductCategories/InTui01.svg', link: '/PA_PE' },
-    // { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', img: '/ProductCategories/Decal01.svg', link: '/Decal_AV' },
-    // { name: 'In Bạt & In Decal Khổ Lớn ', desc: 'In bạt và decal khổ lớn sắc nét và màu sắc chuẩn.', img: '/ProductCategories/InBac01.svg', link: '/InBac' },
-    // { name: 'Menu', desc: 'Thiết kế menu đẹp cho quán.', img: '/ProductCategories/Menu01.svg', link: '/Menu' },
-  ];
-  const images = [
+const images = [
   { name: 'Tem01', img: '/imgProduct/TemTron/1.svg'},
   { name: 'Tem02', img: '/imgProduct/TemTron/2.svg'},
   { name: 'Tem03', img: '/imgProduct/TemTron/3.svg'},
@@ -60,7 +42,8 @@ export default function Partners() {
 
       {/* IMAGE */}
       <div className="flex justify-center mb-12">
-        <img src="/Chất liệu decal/img1.svg" />
+        <img src="/Chất liệu decal/img1.svg" 
+        alt="Mẫu tem nhãn khoa tường"/>
       </div>
 
       {/* SECTION TITLE */}
@@ -73,7 +56,7 @@ export default function Partners() {
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal Nhựa.svg" className="rounded-lg shadow" />
+          <img src="/Chất liệu decal/Decal Nhựa.svg" className="rounded-lg shadow" alt="Mẫu tem nhãn decal nhựa khoa tường"/>
 
           <div>
             <h3 className="text-xl font-semibold mb-3">
@@ -104,12 +87,12 @@ export default function Partners() {
             </p>
           </div>
 
-          <img src="/Chất liệu decal/Decal Giấy.svg" className="rounded-lg shadow" />
+          <img src="/Chất liệu decal/Decal Giấy.svg" alt="Mẫu tem nhãn decal giấy khoa tường" className="rounded-lg shadow" />
         </div>
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal trong.svg" className="rounded-lg shadow" />
+          <img src="/Chất liệu decal/Decal trong.svg" alt="Mẫu tem nhãn decal trong khoa tường" className="rounded-lg shadow" />
 
           <div>
             <h3 className="text-xl font-semibold mb-3">
@@ -143,7 +126,7 @@ export default function Partners() {
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal xi bạc_ xi vàng.svg" className="rounded-lg shadow" />
+          <img src="/Chất liệu decal/Decal xi bạc_ xi vàng.svg" alt="Mẫu tem nhãn decal xi vàng khoa tường" className="rounded-lg shadow" />
 
           <div>
             <h3 className="text-xl font-semibold mb-3">

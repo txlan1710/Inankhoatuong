@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description:
       "In bạt quảng cáo, decal khổ lớn giá rẻ, sắc nét, bền màu. Nhận in nhanh tại Cà Mau.",
     url: "https://inankhoatuong.vn/in-bat-decal",
-    siteName: "In Ấn Khôi Tường",
+    siteName: "In Ấn Khoa Tường",
 
     images: [
       {

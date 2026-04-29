@@ -132,6 +132,7 @@ export default function catalogue() {
       <img
         src="/avt_customer/BichLan.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân Viên tư vấn Khoa Tường"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Bích Lan</b>
@@ -148,6 +149,7 @@ export default function catalogue() {
       <img
         src="/avt_customer/HuuNghia.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân Viên tư vấn Khoa Tường"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Lê Nghĩa</b>
@@ -166,6 +168,7 @@ export default function catalogue() {
       <img
         src="/avt_customer/LanTa.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân Viên tư vấn Khoa Tường"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Xuân Lan</b>
@@ -181,6 +184,7 @@ export default function catalogue() {
       <img
         src="/avt_customer/ThuanTran.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân Viên tư vấn Khoa Tường"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Thuận Trần</b>
