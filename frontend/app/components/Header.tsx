@@ -9,23 +9,23 @@ export default function Header() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
 
           {/* LEFT: Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0">                                                       
             <Image
               src="/Logo-In-An-Khoa-Tuong.svg"
               alt="logo"
-              width={120}
-              height={120}
-              className="object-contain"
+              width={60}
+              height={60}
+              className="md:w-[120px] md:h-[120px]"
             />
           </div>
 
           {/* CENTER: Company */}
           <div className="flex-1 text-center px-4">
-            <h1 className="font-bold text-[#184e86] text-2xl md:text-3xl lg:text-4xl">
+            <h1 className=" font-bold text-[#184e86] text-sm md:text-xl lg:text-3xl">
               CTY TNHH SX & TM KHOA TƯỜNG CÀ MAU
             </h1>
 
-            <p className="text-gray-600 text-sm md:text-xl lg:text-2xl">
+            <p className="text-gray-600 text-xs md:text-sm lg:text-2xl">
               📍 Số 26b, đường Huỳnh Thúc Kháng, khóm 7, Phường Hòa Thành, Tỉnh Cà Mau
             </p>
           </div>
@@ -36,10 +36,10 @@ export default function Header() {
             <FaPhoneAlt className="text-[#184e86] text-3xl"/>
             </div>
             <div>
-              <p className="text-[#184e86] font-bold text-sm md:text-xl lg:text-2xl">
+              <p className="text-[#184e86] font-bold text-xs md:text-sm lg:text-xl">
                 0948.133.600
               </p>
-              <p className="text-[#184e86] font-bold text-sm md:text-xl lg:text-2xl">
+              <p className="text-[#184e86] font-bold text-xs md:text-sm lg:text-xl">
                 0911.828.978
               </p>
             </div>
@@ -56,15 +56,15 @@ export default function Header() {
               Trang Chủ
             </Link>
 
-            <Link href="/product" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
+            <Link href="/san-pham" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
               Sản Phẩm
             </Link>
 
-            <Link href="/introduction" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
+            <Link href="/gioi-thieu" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
               Giới Thiệu
             </Link>
 
-            <Link href="/Contacts" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
+            <Link href="lien-he" className="text-white hover:text-[#f5f107] transition-colors font-bold text-xs md:text-sm lg:text-lg">
               Liên Hệ
             </Link>
           </nav>

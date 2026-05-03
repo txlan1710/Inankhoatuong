@@ -1,3 +1,4 @@
+import Image from "next/image";
 const reasons = [
   'Công nghệ in hiện đại, chất lượng cao.',
   'Giao hàng nhanh, phục vụ 24/7.',
@@ -37,7 +38,10 @@ export default function WhyChooseUs() {
         </h2>
         <div className="w-16 h-1 bg-[#184e86] mx-auto mt-3"></div>
       </div>
-      <img src="/imgs/RIDER 03.svg" className="mx-auto w-full md:w-[100%] h-auto"></img>
+      <Image width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }}  alt='lý-do-chọn-in-ấn-khoa-tường-cà-mau' src="/imgs/RIDER 03.WebP" className="mx-auto w-full md:w-[100%] h-auto"></Image>
       </section>
     </section>
   );

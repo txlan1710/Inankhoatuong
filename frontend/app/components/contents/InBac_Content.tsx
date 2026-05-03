@@ -1,25 +1,25 @@
-
+import Image from "next/image";
  const images = [
-  { name: 'Mẫu 01', img: '/imgProduct/Standee/1.svg'},
-  { name: 'Mẫu 02', img: '/imgProduct/Standee/2.svg'},
-  { name: 'Mẫu 03', img: '/imgProduct/Standee/3.svg'},
-  { name: 'Mẫu 04', img: '/imgProduct/Standee/4.svg'},
-  { name: 'Mẫu 05', img: '/imgProduct/Standee/5.svg'},
-  { name: 'Mẫu 06', img: '/imgProduct/Standee/6.svg'},
-  { name: 'Mẫu 07', img: '/imgProduct/Standee/7.svg'},
-  { name: 'Mẫu 08', img: '/imgProduct/Standee/8.svg'},
-  { name: 'Mẫu 09', img: '/imgProduct/Standee/9.svg'},
-  { name: 'Mẫu 11', img: '/imgProduct/Standee/11.svg'},
-  { name: 'Mẫu 12', img: '/imgProduct/Standee/12.svg'},
-  { name: 'Mẫu 13', img: '/imgProduct/Standee/13.svg'},
-  { name: 'Mẫu 14', img: '/imgProduct/Standee/14.svg'},
+  { name: 'Mẫu 01', img: '/imgProduct/Standee/1.WebP'},
+  { name: 'Mẫu 02', img: '/imgProduct/Standee/2.WebP'},
+  { name: 'Mẫu 03', img: '/imgProduct/Standee/3.WebP'},
+  { name: 'Mẫu 04', img: '/imgProduct/Standee/4.WebP'},
+  { name: 'Mẫu 05', img: '/imgProduct/Standee/5.WebP'},
+  { name: 'Mẫu 06', img: '/imgProduct/Standee/6.WebP'},
+  { name: 'Mẫu 07', img: '/imgProduct/Standee/7.WebP'},
+  { name: 'Mẫu 08', img: '/imgProduct/Standee/8.WebP'},
+  { name: 'Mẫu 09', img: '/imgProduct/Standee/9.WebP'},
+  { name: 'Mẫu 11', img: '/imgProduct/Standee/11.WebP'},
+  { name: 'Mẫu 12', img: '/imgProduct/Standee/12.WebP'},
+  { name: 'Mẫu 13', img: '/imgProduct/Standee/13.WebP'},
+  { name: 'Mẫu 14', img: '/imgProduct/Standee/14.WebP'},
 ];
 
 
 export default function InBatDecal() {
   return (
     <main className="w-full bg-white text-gray-800">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10">
+      <div className="relative max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10">
 
         {/* TITLE */}
         <h1 className="text-2xl md:text-4xl font-bold text-center text-[#184e86] mb-4 md:mb-6 leading-snug">
@@ -43,8 +43,12 @@ export default function InBatDecal() {
           sử dụng trong nhà và ngoài trời.
         </p>
 
-        <img
-          src="/imgs/InBac/Inbac01.svg"
+        <Image
+           width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} 
+          src="/imgProduct/Standee/Inbac01.WebP"
           alt="in bạt quảng cáo"
           className="w-full md:w-[70%] mx-auto mb-6"
         />
@@ -75,8 +79,12 @@ export default function InBatDecal() {
           </p>
         </section>
 
-        <img
-          src="/imgs/InBac/Inbac02.svg"
+        <Image
+           width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} 
+          src="/imgProduct/Standee/Inbac02.WebP"
           alt="banner quảng cáo"
           className="w-full md:w-[90%] mx-auto mb-6"
         />
@@ -348,7 +356,7 @@ export default function InBatDecal() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
                 {images.map((cat, index) => (
                   <div key={index} className="bg-white p-3 md:p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-                    <img src={cat.img} alt={cat.name} className="w-full aspect-square object-cover mb-3 md:mb-4 rounded" />
+                    <Image width={320} height={320} src={cat.img} alt={cat.name} className="w-full aspect-square object-cover mb-3 md:mb-4 rounded" />
                     <h3 className="hover:text-[#184e86] hover:underline uppercase font-semibold text-sm md:text-base text-dark">{cat.name}</h3>
                   </div>
                   

@@ -3,16 +3,16 @@
 import Link from "next/link";
 
 const categories = [
-  { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', img: '/imgProduct/8.svg', hoverImg: '/imgProduct/9.svg', link: '/Decal_Rider'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: '/imgProduct/2.svg', hoverImg: '/imgProduct/3.svg', link: '/Khayxop'},
-    { name: 'Băng Keo', desc: 'Băng keo dán tem, bao bì.', img: '/imgProduct/4.svg', hoverImg: '/imgProduct/5.svg', link: '/Bangkeo'},
-    { name: 'In Túi PA/PE', desc: 'In túi PE, PA chất lượng.', img: '/imgProduct/6.svg', hoverImg: '/imgProduct/7.svg', link: '/PA_PE'},
-    { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', img: '/imgProduct/TemTron/1.svg', hoverImg: '/imgProduct/TemTron/hoverImg/Tem-T2.svg', link: '/Decal_AV'},
-    { name: 'In Bạt & In Decal Khổ Lớn', desc: 'In Bạt & In Decal Khổ Lớn.', img: '/imgProduct/12.svg', hoverImg: '/imgProduct/13.svg', link: '/InBac'},
-    { name: 'In Menu', desc: 'Thiết kế menu đẹp cho quán.', img: '/imgProduct/10.svg', hoverImg: '/imgProduct/11.svg', link: '/Menu'},
-    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', img: '/imgProduct/Catalogue-01.jpg', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/Catalogue'},
-    { name: 'In Hộp', desc: 'In hộp giấy theo yêu cầu, hộp mỹ phẩm, hộp quà tặng cao cấp.', img: '/imgProduct/Mau-hop-02.svg', hoverImg: '/imgProduct/Mau-hop-03.svg', link: '/HopGiay'},
-    { name: 'In Voucher & Namecard', desc: 'In voucher và name card đẹp, sắc nét, lấy nhanh tại Cà Mau.', img: '/imgProduct/Card-Visit-01.svg', hoverImg: '/imgProduct/Card-Visit-03.svg', link: '/Card'},
+  { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', altImg:'ảnh-decal-rider-thủy-sản', img: '/imgProduct/8.WebP', hoverImg: '/imgProduct/9.WebP', link: '/Decal_Rider'},
+    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: '/imgProduct/2.WebP', altImg:'ảnh-khay-xốp', hoverImg: '/imgProduct/3.WebP', link: '/Khayxop'},
+    { name: 'Băng Keo', desc: 'Băng keo dán tem, bao bì.', img: '/imgProduct/4.WebP', altImg:'ảnh-băng-keo', hoverImg: '/imgProduct/5.WebP', link: '/Bangkeo'},
+    { name: 'In Túi PA/PE', desc: 'In túi PE, PA chất lượng.', img: '/imgProduct/6.WebP', altImg:'ảnh-túi-pa-pe', hoverImg: '/imgProduct/7.WebP', link: '/PA_PE'},
+    { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', altImg:'ảnh-tem-nhãn-ăn-vặt', img: '/imgProduct/img01.WebP', hoverImg: '/imgProduct/Tem-T2.WebP', link: '/Decal_AV'},
+    { name: 'In Bạt & In Decal Khổ Lớn', desc: 'In Bạt & In Decal Khổ Lớn.', altImg:'ảnh-bạt-decal-khổ-lớn', img: '/imgProduct/12.WebP', hoverImg: '/imgProduct/13.WebP', link: '/InBac'},
+    { name: 'In Menu', desc: 'Thiết kế menu đẹp cho quán.', altImg:'ảnh-menu-quán-nước', img: '/imgProduct/10.WebP', hoverImg: '/imgProduct/11.WebP', link: '/Menu'},
+    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', altImg:'ảnh-catalogue-đẹp', img: '/imgProduct/Catalogue-01.jpg', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/Catalogue'},
+    { name: 'In Hộp', desc: 'In hộp giấy theo yêu cầu, hộp mỹ phẩm, hộp quà tặng cao cấp.', altImg:'ảnh-hộp-giấy-in-theo-yêu-cầu', img: '/imgProduct/Mau-hop-02.WebP', hoverImg: '/imgProduct/Mau-hop-03.WebP', link: '/HopGiay'},
+    { name: 'In Voucher & Namecard', desc: 'In voucher và name card đẹp, sắc nét, lấy nhanh tại Cà Mau.', altImg:'ảnh-voucher-namecard', img: '/imgProduct/Card-Visit-01.WebP', hoverImg: '/imgProduct/Card-Visit-03.WebP', link: '/Card'},
 ];
 
 export default function ProductCategories() {

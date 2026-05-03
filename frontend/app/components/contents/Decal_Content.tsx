@@ -1,24 +1,26 @@
+import Image from "next/image";
+
 const images = [
-  { name: 'Tem01', img: '/imgProduct/TemTron/1.svg'},
-  { name: 'Tem02', img: '/imgProduct/TemTron/2.svg'},
-  { name: 'Tem03', img: '/imgProduct/TemTron/3.svg'},
-  { name: 'Tem04', img: '/imgProduct/TemTron/4.svg'},
-  { name: 'Tem05', img: '/imgProduct/TemTron/5.svg'},
-  { name: 'Tem06', img: '/imgProduct/TemTron/6.svg'},
-  { name: 'Tem07', img: '/imgProduct/TemTron/7.svg'},
-  { name: 'Tem08', img: '/imgProduct/TemTron/8.svg'},
-  { name: 'Tem09', img: '/imgProduct/TemTron/9.svg'},
-  { name: 'Tem10', img: '/imgProduct/TemTron/10.svg'},
-  { name: 'Tem11', img: '/imgProduct/TemTron/11.svg'},
-  { name: 'Tem12', img: '/imgProduct/TemTron/12.svg'},
-  { name: 'Tem13', img: '/imgProduct/TemTron/13.svg'},
-  { name: 'Tem14', img: '/imgProduct/TemTron/14.svg'},
-  { name: 'Tem15', img: '/imgProduct/TemTron/15.svg'},
-  { name: 'Tem16', img: '/imgProduct/TemTron/16.svg'},
-  { name: 'Tem17', img: '/imgProduct/TemTron/17.svg'},
-  { name: 'Tem18', img: '/imgProduct/TemTron/18.svg'},
-  { name: 'Tem19', img: '/imgProduct/TemTron/19.svg'},
-  { name: 'Tem20', img: '/imgProduct/TemTron/20.svg'},
+  { name: 'Tem01', img: '/imgProduct/TemTron/1.WebP'},
+  { name: 'Tem02', img: '/imgProduct/TemTron/2.WebP'},
+  { name: 'Tem03', img: '/imgProduct/TemTron/3.WebP'},
+  { name: 'Tem04', img: '/imgProduct/TemTron/4.WebP'},
+  { name: 'Tem05', img: '/imgProduct/TemTron/5.WebP'},
+  { name: 'Tem06', img: '/imgProduct/TemTron/6.WebP'},
+  { name: 'Tem07', img: '/imgProduct/TemTron/7.webp'},
+  { name: 'Tem08', img: '/imgProduct/TemTron/8.webp'},
+  { name: 'Tem09', img: '/imgProduct/TemTron/9.webp'},
+  { name: 'Tem10', img: '/imgProduct/TemTron/10.webp'},
+  { name: 'Tem11', img: '/imgProduct/TemTron/11.webp'},
+  { name: 'Tem12', img: '/imgProduct/TemTron/12.webp'},
+  { name: 'Tem13', img: '/imgProduct/TemTron/13.webp'},
+  { name: 'Tem14', img: '/imgProduct/TemTron/14.webp'},
+  { name: 'Tem15', img: '/imgProduct/TemTron/15.webp'},
+  { name: 'Tem16', img: '/imgProduct/TemTron/16.webp'},
+  { name: 'Tem17', img: '/imgProduct/TemTron/17.webp'},
+  { name: 'Tem18', img: '/imgProduct/TemTron/18.webp'},
+  { name: 'Tem19', img: '/imgProduct/TemTron/19.webp'},
+  { name: 'Tem20', img: '/imgProduct/TemTron/20.webp'},
 ];
 
 
@@ -42,7 +44,10 @@ export default function Partners() {
 
       {/* IMAGE */}
       <div className="flex justify-center mb-12">
-        <img src="/Chất liệu decal/img1.svg" 
+        <Image  width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }}  src="/Chất liệu decal/img1.webp" 
         alt="Mẫu tem nhãn khoa tường"/>
       </div>
 
@@ -56,7 +61,10 @@ export default function Partners() {
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal Nhựa.svg" className="rounded-lg shadow" alt="Mẫu tem nhãn decal nhựa khoa tường"/>
+          <Image  width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }}  src="/Chất liệu decal/Decal Nhựa.webp" className="rounded-lg shadow" alt="Mẫu tem nhãn decal nhựa khoa tường"/>
 
           <div>
             <h3 className="text-xl font-semibold mb-3">
@@ -87,12 +95,12 @@ export default function Partners() {
             </p>
           </div>
 
-          <img src="/Chất liệu decal/Decal Giấy.svg" alt="Mẫu tem nhãn decal giấy khoa tường" className="rounded-lg shadow" />
+          <Image width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}  src="/Chất liệu decal/Decal Giấy.webp" alt="Mẫu tem nhãn decal giấy khoa tường" className="rounded-lg shadow" />
         </div>
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal trong.svg" alt="Mẫu tem nhãn decal trong khoa tường" className="rounded-lg shadow" />
+          <Image width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} src="/Chất liệu decal/Decal trong.webp" alt="Mẫu tem nhãn decal trong khoa tường" className="rounded-lg shadow" />
 
           <div>
             <h3 className="text-xl font-semibold mb-3">
@@ -121,12 +129,12 @@ export default function Partners() {
             </p>
           </div>
 
-          <img src="/Chất liệu decal/Decal Bể.svg" className="rounded-lg shadow" />
+          <Image alt='Loại-tem-bể-tem-chống-giả' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} src="/Chất liệu decal/Decal Bể.webp" className="rounded-lg shadow" />
         </div>
 
         {/* ITEM */}
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <img src="/Chất liệu decal/Decal xi bạc_ xi vàng.svg" alt="Mẫu tem nhãn decal xi vàng khoa tường" className="rounded-lg shadow" />
+          <Image alt='Decal-xi-vàng-xi-bạc' width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }}  src="/Chất liệu decal/Decal xi bạc_ xi vàng.webp" className="rounded-lg shadow" />
 
           <div>
             <h3 className="text-xl font-semibold mb-3">
@@ -154,7 +162,7 @@ export default function Partners() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
                 {images.map((cat, index) => (
                   <div key={index} className="bg-white p-3 md:p-4 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
-                    <img src={cat.img} alt={cat.name} className="w-full aspect-square object-cover mb-3 md:mb-4 rounded" />
+                    <Image width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} src={cat.img} alt={cat.name} className="w-full aspect-square object-cover mb-3 md:mb-4 rounded" />
                     <h3 className="hover:text-[#184e86] hover:underline uppercase font-semibold text-sm md:text-base text-dark">{cat.name}</h3>
                   </div>
                   
@@ -178,9 +186,11 @@ export default function Partners() {
     <a href='https://zalo.me/0941027800'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
       
-      <img
+      <Image width={300}
+  height={300} 
         src="/avt_customer/BichLan.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân-viên-tư-vấn-Bích-lan"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Bích Lan</b>
@@ -194,7 +204,8 @@ export default function Partners() {
     <a href='https://zalo.me/0948133600'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#184e86] text-white p-2 md:p-6 rounded-xl shadow-md">
       
-      <img
+      <Image width={300} height={300}
+        alt="Nhân-vien-tu-van-Le-Nghia"
         src="/avt_customer/HuuNghia.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
       />
@@ -212,9 +223,10 @@ export default function Partners() {
     {/* CARD 3 */}<a href='https://zalo.me/0941027800'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">
       
-      <img
+      <Image width={300} height={300}
         src="/avt_customer/LanTa.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân-viên-tư-vấn-Xuân-Lan"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Xuân Lan</b>
@@ -227,9 +239,10 @@ export default function Partners() {
     <a href='https://zalo.me/0989859415'>
     <div className="flex items-center gap-2 md:gap-4 bg-[#fcb700] text-white p-2 md:p-6 rounded-xl shadow-md">
       
-      <img
+      <Image  width={300} height={300}
         src="/avt_customer/ThuanTran.jpg"
         className="w-14 h-14 md:w-36 md:h-36 rounded-full object-cover"
+        alt="Nhân-viên-tư-vấn-Thuận-Trần"
       />
       <div className="min-w-0">
         <b className="text-sm md:text-2xl">Thuận Trần</b>

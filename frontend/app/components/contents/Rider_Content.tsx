@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function DecalRider() {
   return (
     <main className="w-full bg-white text-gray-800">
@@ -18,8 +19,11 @@ export default function DecalRider() {
           </p>
 
           <figure className="flex justify-center">
-            <img
-              src="/imgs/imgsp.svg"
+            <Image width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }} 
+              src="/imgs/Decal-dán-trong-môi trường-đông-lạnh.webp"
               alt="Decal thủy sản"
               className="w-full sm:w-[85%] md:w-[75%] rounded-lg object-cover"
             />
@@ -79,8 +83,12 @@ export default function DecalRider() {
           </p>
 
           <figure className="flex justify-center mb-6">
-            <img
-              src="/imgs/TemThuySan01.svg"
+            <Image width={0}
+  height={0}
+  sizes="100vw"
+  style={{ width: '100%', height: 'auto' }}
+              alt="decal-thủy-sản-cua-Khoa-Tuong"
+              src="/imgs/TemThuySan01.webp"
               className="w-full sm:w-[80%] md:w-[70%] rounded-lg object-cover"
             />
           </figure>
@@ -104,9 +112,14 @@ export default function DecalRider() {
             </ul>
 
             <figure className="flex justify-center mb-3">
-              <img
-                src="/imgs/Decal Nhựa PVC.svg"
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '70%', height: 'auto' }}
+                src="/imgs/Decal Nhựa PVC.webp"
                 className="w-full sm:w-[80%] md:w-[65%] rounded-lg"
+                alt='decal-pvc'
               />
             </figure>
 
@@ -131,8 +144,13 @@ export default function DecalRider() {
             </ul>
 
             <figure className="flex justify-center mb-3">
-              <img
-                src="/imgs/Decal Trong.svg"
+              <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                style={{ width: '70%', height: 'auto' }}
+                alt='decal-trong'
+                src="/imgs/Decal Trong.webp"
                 className="w-full sm:w-[80%] md:w-[65%] rounded-lg"
               />
             </figure>
@@ -153,8 +171,18 @@ export default function DecalRider() {
           </p>
 
           <figure className="flex flex-col items-center gap-3 mb-4">
-            <img src="/imgs/Rider02.svg" className="w-full sm:w-[70%] md:w-[55%] rounded-lg" />
-            <img src="/imgs/TemThuySan02.svg" className="w-full sm:w-[70%] md:w-[55%] rounded-lg" />
+            <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                alt='rider-thủy-sản'
+                style={{ width: '70%', height: 'auto' }} src="/imgs/Rider02.webp" className="w-full sm:w-[70%] md:w-[55%] rounded-lg" 
+              />
+            <Image
+                width={0}
+                height={0}
+                sizes="100vw"
+                alt='rider-thủy-sản' src="/imgs/TemThuySan02.webp" className="w-full sm:w-[70%] md:w-[55%] rounded-lg" />
           </figure>
         {/* PROCESS */}
 <section className="mb-8 sm:mb-10">
