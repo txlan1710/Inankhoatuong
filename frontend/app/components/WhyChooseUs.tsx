@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
       <Image width={0}
   height={0}
   sizes="100vw"
-  style={{ width: '100%', height: 'auto' }}  alt='lý-do-chọn-in-ấn-khoa-tường-cà-mau' src="/imgs/RIDER 03.WebP" className="mx-auto w-full md:w-[100%] h-auto"></Image>
+  style={{ width: '100%', height: 'auto' }}  alt='lý-do-chọn-in-ấn-khoa-tường-cà-mau' src="/imgs/RIDER 03.webp" className="mx-auto w-full md:w-[100%] h-auto"></Image>
       </section>
     </section>
   );
