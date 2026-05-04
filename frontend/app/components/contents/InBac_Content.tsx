@@ -1,18 +1,18 @@
 import Image from "next/image";
  const images = [
-  { name: 'Mẫu 01', img: '/imgProduct/Standee/1.WebP'},
-  { name: 'Mẫu 02', img: '/imgProduct/Standee/2.WebP'},
-  { name: 'Mẫu 03', img: '/imgProduct/Standee/3.WebP'},
-  { name: 'Mẫu 04', img: '/imgProduct/Standee/4.WebP'},
-  { name: 'Mẫu 05', img: '/imgProduct/Standee/5.WebP'},
-  { name: 'Mẫu 06', img: '/imgProduct/Standee/6.WebP'},
-  { name: 'Mẫu 07', img: '/imgProduct/Standee/7.WebP'},
-  { name: 'Mẫu 08', img: '/imgProduct/Standee/8.WebP'},
-  { name: 'Mẫu 09', img: '/imgProduct/Standee/9.WebP'},
-  { name: 'Mẫu 11', img: '/imgProduct/Standee/11.WebP'},
-  { name: 'Mẫu 12', img: '/imgProduct/Standee/12.WebP'},
-  { name: 'Mẫu 13', img: '/imgProduct/Standee/13.WebP'},
-  { name: 'Mẫu 14', img: '/imgProduct/Standee/14.WebP'},
+  { name: 'Mẫu 01', img: '/imgProduct/Standee/1.webp'},
+  { name: 'Mẫu 02', img: '/imgProduct/Standee/2.webp'},
+  { name: 'Mẫu 03', img: '/imgProduct/Standee/3.webp'},
+  { name: 'Mẫu 04', img: '/imgProduct/Standee/4.webp'},
+  { name: 'Mẫu 05', img: '/imgProduct/Standee/5.webp'},
+  { name: 'Mẫu 06', img: '/imgProduct/Standee/6.webp'},
+  { name: 'Mẫu 07', img: '/imgProduct/Standee/7.webp'},
+  { name: 'Mẫu 08', img: '/imgProduct/Standee/8.webp'},
+  { name: 'Mẫu 09', img: '/imgProduct/Standee/9.webp'},
+  { name: 'Mẫu 11', img: '/imgProduct/Standee/11.webp'},
+  { name: 'Mẫu 12', img: '/imgProduct/Standee/12.webp'},
+  { name: 'Mẫu 13', img: '/imgProduct/Standee/13.webp'},
+  { name: 'Mẫu 14', img: '/imgProduct/Standee/14.webp'},
 ];
 
 
@@ -48,7 +48,7 @@ export default function InBatDecal() {
   height={0}
   sizes="100vw"
   style={{ width: '100%', height: 'auto' }} 
-          src="/imgProduct/Standee/Inbac01.WebP"
+          src="/imgProduct/Standee/Inbac01.webp"
           alt="in bạt quảng cáo"
           className="w-full md:w-[70%] mx-auto mb-6"
         />
@@ -84,7 +84,7 @@ export default function InBatDecal() {
   height={0}
   sizes="100vw"
   style={{ width: '100%', height: 'auto' }} 
-          src="/imgProduct/Standee/Inbac02.WebP"
+          src="/imgProduct/Standee/Inbac02.webp"
           alt="banner quảng cáo"
           className="w-full md:w-[90%] mx-auto mb-6"
         />

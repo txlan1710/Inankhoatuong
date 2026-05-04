@@ -7,16 +7,16 @@
 
 
   const categories = [
-    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', altImg:'ảnh-decal-rider-thủy-sản', img: '/imgProduct/8.WebP', hoverImg: '/imgProduct/9.WebP', link: '/decal-tem-nhan-thuy-san'},
-    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: '/imgProduct/2.WebP', altImg:'ảnh-khay-xốp', hoverImg: '/imgProduct/3.WebP', link: '/khay_xop'},
-    { name: 'Băng Keo', desc: 'Băng keo dán tem, bao bì.', img: '/imgProduct/4.WebP', altImg:'ảnh-băng-keo', hoverImg: '/imgProduct/5.WebP', link: '/bang_keo'},
-    { name: 'In Túi PA/PE', desc: 'In túi PE, PA chất lượng.', img: '/imgProduct/6.WebP', altImg:'ảnh-túi-pa-pe', hoverImg: '/imgProduct/7.WebP', link: '/in-tui-pa-pe-tui-hot-xoai'},
-    { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', altImg:'ảnh-tem-nhãn-ăn-vặt', img: '/imgProduct/img01.WebP', hoverImg: '/imgProduct/Tem-T2.WebP', link: '/decal-tem-nhan'},
-    { name: 'In Bạt & In Decal Khổ Lớn', desc: 'In Bạt & In Decal Khổ Lớn.', altImg:'ảnh-bạt-decal-khổ-lớn', img: '/imgProduct/12.WebP', hoverImg: '/imgProduct/13.WebP', link: '/in-bac'},
-    { name: 'In Menu', desc: 'Thiết kế menu đẹp cho quán.', altImg:'ảnh-menu-quán-nước', img: '/imgProduct/10.WebP', hoverImg: '/imgProduct/11.WebP', link: '/menu'},
-    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', altImg:'ảnh-catalogue-đẹp', img: '/imgProduct/Catalogue-01.jpg', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/catalogue'},
-    { name: 'In Hộp', desc: 'In hộp giấy theo yêu cầu, hộp mỹ phẩm, hộp quà tặng cao cấp.', altImg:'ảnh-hộp-giấy-in-theo-yêu-cầu', img: '/imgProduct/Mau-hop-02.WebP', hoverImg: '/imgProduct/Mau-hop-03.WebP', link: '/hop_giay'},
-    { name: 'In Voucher & Namecard', desc: 'In voucher và name card đẹp, sắc nét, lấy nhanh tại Cà Mau.', altImg:'ảnh-voucher-namecard', img: '/imgProduct/Card-Visit-01.WebP', hoverImg: '/imgProduct/Card-Visit-03.WebP', link: '/card'},
+    { name: 'Decal - Rider thủy sản', desc: 'In decal chống nước cho bao bì thủy sản.', altImg:'ảnh-decal-rider-thủy-sản', img: '/imgProduct/8.webp', hoverImg: '/imgProduct/9.webp', link: '/decal-tem-nhan-thuy-san'},
+    { name: 'Khay Xốp', desc: 'Khay xốp đựng thủy sản an toàn.', img: '/imgProduct/2.webp', altImg:'ảnh-khay-xốp', hoverImg: '/imgProduct/3.webp', link: '/khay-xop'},
+    { name: 'Băng Keo', desc: 'Băng keo dán tem, bao bì.', img: '/imgProduct/4.webp', altImg:'ảnh-băng-keo', hoverImg: '/imgProduct/5.webp', link: '/bang-keo'},
+    { name: 'In Túi PA/PE', desc: 'In túi PE, PA chất lượng.', img: '/imgProduct/6.webp', altImg:'ảnh-túi-pa-pe', hoverImg: '/imgProduct/7.webp', link: '/in-tui-pa-pe-tui-hot-xoai'},
+    { name: 'Decal - Tem Nhãn', desc: 'In tem nhãn đa dạng mẫu mã - bền màu', altImg:'ảnh-tem-nhãn-ăn-vặt', img: '/imgProduct/img01.webp', hoverImg: '/imgProduct/Tem-T2.webp', link: '/decal-tem-nhan'},
+    { name: 'In Bạt & In Decal Khổ Lớn', desc: 'In Bạt & In Decal Khổ Lớn.', altImg:'ảnh-bạt-decal-khổ-lớn', img: '/imgProduct/12.webp', hoverImg: '/imgProduct/13.webp', link: '/in-bac'},
+    { name: 'In Menu', desc: 'Thiết kế menu đẹp cho quán.', altImg:'ảnh-menu-quán-nước', img: '/imgProduct/10.webp', hoverImg: '/imgProduct/11.webp', link: '/menu-quan'},
+    { name: 'In Catalogue', desc: 'In catalogue chuyên nghiệp, thiết kế đẹp, giá tốt tại Cà Mau.', altImg:'ảnh-catalogue-đẹp', img: '/imgProduct/Catalogue-01.jpg', hoverImg: '/imgProduct/In-Catalogue-04.png', link: '/catalogue-dep-re'},
+    { name: 'In Hộp', desc: 'In hộp giấy theo yêu cầu, hộp mỹ phẩm, hộp quà tặng cao cấp.', altImg:'ảnh-hộp-giấy-in-theo-yêu-cầu', img: '/imgProduct/Mau-hop-02.webp', hoverImg: '/imgProduct/Mau-hop-03.webp', link: '/hop-giay'},
+    { name: 'In Voucher & Namecard', desc: 'In voucher và name card đẹp, sắc nét, lấy nhanh tại Cà Mau.', altImg:'ảnh-voucher-namecard', img: '/imgProduct/Card-Visit-01.webp', hoverImg: '/imgProduct/Card-Visit-03.webp', link: '/card-visit-voucher'},
   ];
 
   export default function ProductCategories() {

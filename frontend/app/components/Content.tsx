@@ -19,7 +19,7 @@ export default function Content() {
           height={717}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1280px"
           // ❌ bỏ priority nếu không phải ảnh hero trên cùng
-          src="/imgs/HỆ THỐNG MÁY IN FLEXO HIỆN ĐẠI.WebP"
+          src="/imgs/HỆ THỐNG MÁY IN FLEXO HIỆN ĐẠI.webp"
           className="w-full h-auto rounded-lg"
           alt="hệ-thống-máy-in-flexo-hiện-đại-của-in-an-khoa-tuong"
         />
@@ -33,7 +33,7 @@ export default function Content() {
                 width={266}
                 height={184}
                 sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 266px"
-                src={`/imgs/${item}.WebP`}
+                src={`/imgs/${item}.webp`}
                 alt={`Hệ-thống-máy-móc-khoa-tường-0${item}`}
                 className="w-full h-auto object-cover rounded-md"
               />

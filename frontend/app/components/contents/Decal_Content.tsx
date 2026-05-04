@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const images = [
-  { name: 'Tem01', img: '/imgProduct/TemTron/1.WebP'},
-  { name: 'Tem02', img: '/imgProduct/TemTron/2.WebP'},
-  { name: 'Tem03', img: '/imgProduct/TemTron/3.WebP'},
-  { name: 'Tem04', img: '/imgProduct/TemTron/4.WebP'},
-  { name: 'Tem05', img: '/imgProduct/TemTron/5.WebP'},
-  { name: 'Tem06', img: '/imgProduct/TemTron/6.WebP'},
+  { name: 'Tem01', img: '/imgProduct/TemTron/1.webp'},
+  { name: 'Tem02', img: '/imgProduct/TemTron/2.webp'},
+  { name: 'Tem03', img: '/imgProduct/TemTron/3.webp'},
+  { name: 'Tem04', img: '/imgProduct/TemTron/4.webp'},
+  { name: 'Tem05', img: '/imgProduct/TemTron/5.webp'},
+  { name: 'Tem06', img: '/imgProduct/TemTron/6.webp'},
   { name: 'Tem07', img: '/imgProduct/TemTron/7.webp'},
   { name: 'Tem08', img: '/imgProduct/TemTron/8.webp'},
   { name: 'Tem09', img: '/imgProduct/TemTron/9.webp'},
